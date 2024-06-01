@@ -1,0 +1,9 @@
+[submodule "pyglotaran"]
+	path = pyglotaran
+	url = https://github.com/glotaran/pyglotaran.git
+[submodule "pyglotaran-extras"]
+	path = pyglotaran-extras
+	url = https://github.com/glotaran/pyglotaran-extras.git
+[submodule "pyglotaran-examples"]
+	path = pyglotaran-examples
+	url = https://github.com/glotaran/pyglotaran-examples.git
