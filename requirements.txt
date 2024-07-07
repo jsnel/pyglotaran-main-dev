@@ -5,3 +5,5 @@ ipykernel # needed to work with notebooks in VS Code
 pydantic
 pytest
 pytest-allclose
+papermill
+yaargh
