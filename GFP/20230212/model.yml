@@ -1,0 +1,81 @@
+clp_penalties: []
+clp_constraints: []
+clp_relations:
+- interval:
+  - - 0
+    - 1000
+  source: A1
+  target: A2
+  parameter: rel.r1
+dataset_groups:
+  default:
+    label: default
+    residual_function: variable_projection
+    link_clp: null
+weights: []
+k_matrix:
+  k1:
+    label: k1
+    matrix:
+      (I, A2): kinetic.to_I_from_A2
+      (I, A1): kinetic.to_I_from_A1
+      (I2, I): kinetic.to_I2_from_I
+      (I2, I2): kinetic.from_I2
+megacomplex:
+  decay:
+    label: decay
+    dimension: time
+    type: decay
+    k_matrix:
+    - k1
+  artifact:
+    label: artifact
+    dimension: time
+    type: coherent-artifact
+    order: 1
+    width: null
+initial_concentration:
+  j1:
+    label: j1
+    compartments:
+    - A2
+    - A1
+    - I2
+    - I
+    parameters:
+    - j.2
+    - j.1
+    - j.0
+    - j.0
+    exclude_from_normalize: []
+irf:
+  irf1:
+    label: irf1
+    scale: null
+    shift: null
+    normalize: true
+    backsweep: false
+    backsweep_period: null
+    dispersion_center: irf.dispcenter
+    center_dispersion_coefficients:
+    - irf.disp1
+    - irf.disp2
+    width_dispersion_coefficients: []
+    model_dispersion_with_wavenumber: true
+    type: spectral-gaussian
+    center: irf.center
+    width: irf.width
+dataset:
+  GFPppH2O:
+    label: GFPppH2O
+    group: default
+    force_index_dependent: false
+    megacomplex:
+    - decay
+    - artifact
+    megacomplex_scale: null
+    global_megacomplex: null
+    global_megacomplex_scale: null
+    scale: null
+    initial_concentration: j1
+    irf: irf1

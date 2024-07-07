@@ -1,0 +1,14 @@
+label,value,standard_error,expression,maximum,minimum,non_negative,vary
+j.1,0.5790074340501137,None,1-$j.2,,,False,False
+j.2,0.42099256594988627,0.005192276577099776,None,,,False,True
+j.0,0.0,None,None,,,False,False
+kinetic.to_I_from_A2,0.07666127931527439,0.0008817554719575703,None,,,True,True
+kinetic.to_I_from_A1,0.35004776474416627,0.0036651379361718134,None,,,True,True
+kinetic.to_I2_from_I,0.000335,None,None,,,True,False
+kinetic.from_I2,0.002528773854,None,None,,,True,False
+irf.center,0.34831072444125355,0.0019943504444077565,None,,,False,True
+irf.width,0.06702601981511398,0.0005238949039368452,None,,,True,True
+irf.dispcenter,500.0,None,None,,,False,False
+irf.disp1,-0.27760750575715337,0.009217836664435371,None,,,False,True
+irf.disp2,-0.23713534879789278,0.009237136710204437,None,,,False,True
+rel.r1,1.0,None,None,,,False,False

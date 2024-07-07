@@ -1,0 +1,14 @@
+label,value,standard_error,expression,maximum,minimum,non_negative,vary
+j.1,0.5,None,1-$j.2,,,False,False
+j.2,0.5,None,None,,,False,True
+j.0,0.0,None,None,,,False,False
+kinetic.to_I_from_A2,0.08,None,None,,,True,True
+kinetic.to_I_from_A1,0.4,None,None,,,True,True
+kinetic.to_I2_from_I,0.000335,None,None,,,True,False
+kinetic.from_I2,0.002528773854,None,None,,,True,False
+irf.center,0.036,None,None,,,False,True
+irf.width,0.0833354052,None,None,,,True,True
+irf.dispcenter,500.0,None,None,,,False,False
+irf.disp1,-0.327,None,None,,,False,True
+irf.disp2,-0.1915,None,None,,,False,True
+rel.r1,1.0,None,None,,,False,False

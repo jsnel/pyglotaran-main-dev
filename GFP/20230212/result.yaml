@@ -1,0 +1,28 @@
+number_of_function_evaluations: 11
+success: true
+termination_reason: The maximum number of function evaluations is exceeded.
+glotaran_version: 0.7.2
+free_parameter_labels:
+- j.2
+- kinetic.to_I_from_A2
+- kinetic.to_I_from_A1
+- irf.center
+- irf.width
+- irf.disp1
+- irf.disp2
+scheme: scheme.yml
+initial_parameters: initial_parameters.csv
+optimized_parameters: optimized_parameters.csv
+parameter_history: parameter_history.csv
+optimization_history: optimization_history.csv
+data:
+  GFPppH2O: GFPppH2O.nc
+chi_square: 6385.543199302701
+degrees_of_freedom: 31193
+number_of_clps: 960
+number_of_residuals: 32160
+number_of_jacobian_evaluations: 11
+number_of_free_parameters: 7
+optimality: 18.83770376305756
+reduced_chi_square: 0.20471077483097816
+root_mean_square_error: 0.4524497484041495
